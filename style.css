@@ -1,4 +1,4 @@
-/* Multiwallet — sitio legal y de soporte. Mismos colores que la app. */
+/* MultiWallet — sitio legal y de soporte. Mismos colores que la app. */
 :root {
   --bg: #F3F0E8;
   --card: #FFFFFF;
@@ -7,6 +7,7 @@
   --text: #15161A;
   --muted: #6E6A60;
   --lime: #D4F25C;
+  --brand: #6F8F0A;
   --ink: #15161A;
   color-scheme: light;
 }
@@ -18,6 +19,7 @@
     --border: #2A2C31;
     --text: #F1EFE8;
     --muted: #9E9B92;
+    --brand: #D4F25C;
     color-scheme: dark;
   }
 }
@@ -44,13 +46,10 @@ header.site {
   padding: 20px 0; flex-wrap: wrap;
 }
 .logo {
-  display: inline-flex; align-items: flex-end; gap: 4px; text-decoration: none;
+  display: inline-flex; align-items: flex-end; text-decoration: none;
   font: 700 30px/1 "Space Grotesk", sans-serif; letter-spacing: -1.2px;
 }
-.logo::after {
-  content: ""; width: 9px; height: 9px; border-radius: 3px; background: var(--lime);
-  border: 1.5px solid var(--text); margin-bottom: 4px;
-}
+.logo .w, h1 .w { color: var(--brand); }
 nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
 nav a {
   font-weight: 500; font-size: 14px; text-decoration: none; padding: 6px 10px; border-radius: 10px; color: var(--muted);
